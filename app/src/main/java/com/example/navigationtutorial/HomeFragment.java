@@ -17,13 +17,13 @@ import com.example.navigationtutorial.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
     FragmentHomeBinding binding;
-    Activity mainActivity;
+    MainActivity mainActivity;
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
 
-        mainActivity = ((MainActivity) context);
+        mainActivity = (MainActivity) context;
     }
 
     @Override
@@ -43,6 +43,15 @@ public class HomeFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        binding.homeBtNavigate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle args = new Bundle();
+                args.putString("passed_string",binding.homeTvString.getText().toString());
+                //Navigate to details fragment with the given
+                mainActivity.navController.navigate(R.id.action_homeFragment_to_detailsFragment,args);
+            }
+        });
         super.onViewCreated(view, savedInstanceState);
     }
 

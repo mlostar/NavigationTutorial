@@ -18,7 +18,11 @@
         android:id="@+id/detailsFragment"
         android:name="com.example.navigationtutorial.DetailsFragment"
         android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
+        tools:layout="@layout/fragment_details" >
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://navigation.tutorial/{passed_string}" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.navigationtutorial.SettingsFragment"

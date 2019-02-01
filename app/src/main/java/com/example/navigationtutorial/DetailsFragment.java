@@ -32,6 +32,9 @@ public class DetailsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        //This argument will be either passed by homeFragment or a deeplink
+        String passedString = getArguments().getString("passed_string");
+        binding.detailsTvData.setText(passedString);
 
     }
 
