@@ -1,14 +1,12 @@
 package com.example.navigationtutorial
 
 import android.databinding.DataBindingUtil
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-
-import com.example.navigationtutorial.databinding.ActivityMainBinding
-
+import android.support.v7.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import com.example.navigationtutorial.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var navController: NavController

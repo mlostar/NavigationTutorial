@@ -1,15 +1,11 @@
 package com.example.navigationtutorial
 
-import android.app.Activity
 import android.content.Context
-import android.net.Uri
 import android.os.Bundle
-import android.renderscript.ScriptGroup
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
 import com.example.navigationtutorial.databinding.FragmentHomeBinding
 
 
