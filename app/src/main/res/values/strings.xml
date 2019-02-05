@@ -7,4 +7,6 @@
     <string name="hello_settings">Welcome to the settings fragment!</string>
     <string name="hello_profile">Welcome to the profile fragment!</string>
     <string name="hello_details">Welcome to the details fragment! The string you have passed is:</string>
+    <string name="home_hint">String you want to pass to the next fragment</string>
+    <string name="home_text">Navigate to details fragment</string>
 </resources>
